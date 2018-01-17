@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'FrameworkSample'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.license = 'BSD'
   s.summary = 'Funk Pair Check'
   s.homepage = 'https://github.com/ContinousIntegration/FrameworkSample/'
