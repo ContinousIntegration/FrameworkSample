@@ -11,3 +11,14 @@ fastlane action actionName for definition
 
   - brew update
   - bundle install && brew bundle
+
+fastlane actions | grep pod 
+
+
+get cocoapod token command line --> to deploy on cocoapod from Travis
+grep -A2 'trunk.cocoapods.org' ~/.netrc
+
+
+git flow to push from develop to master
+
+fastlane git add_tag to automatize

@@ -1,7 +1,14 @@
 lane :funky do
-  scan(
-    code_coverage: true,
-    open_report: true
-  )
-  xcov
+  scan()
+  if git_branch() == "developp"
+    funky_deploy
+  #elsif git_branch() == "master"
+  #  print "OK MASTER"
+  end
+end
+
+lane :funky_deploy do
+  print("\ndeploy\n")
+  pod_lib_lint
+  pod_push
 end
