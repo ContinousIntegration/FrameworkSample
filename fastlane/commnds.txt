@@ -1,0 +1,9 @@
+create folder named fastlane
+create file named Fastfile
+declare lanes
+fastlane as command to reload
+fastlane laneName to run the lane
+
+
+fastlane actions for hints
+fastlane action actionName for definition

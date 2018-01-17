@@ -10,6 +10,7 @@
 		BFF919BA200F867F0007FD24 /* FrameworkSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF919B0200F867F0007FD24 /* FrameworkSample.framework */; };
 		BFF919BF200F867F0007FD24 /* FrameworkSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF919BE200F867F0007FD24 /* FrameworkSampleTests.swift */; };
 		BFF919C1200F867F0007FD24 /* FrameworkSample.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF919B3200F867F0007FD24 /* FrameworkSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFF919CB200F86DD0007FD24 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF919CA200F86DD0007FD24 /* Pair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BFF919B9200F867F0007FD24 /* FrameworkSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF919BE200F867F0007FD24 /* FrameworkSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkSampleTests.swift; sourceTree = "<group>"; };
 		BFF919C0200F867F0007FD24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF919CA200F86DD0007FD24 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				BFF919B3200F867F0007FD24 /* FrameworkSample.h */,
 				BFF919B4200F867F0007FD24 /* Info.plist */,
+				BFF919CA200F86DD0007FD24 /* Pair.swift */,
 			);
 			path = FrameworkSample;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					BFF919AF200F867F0007FD24 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					BFF919B8200F867F0007FD24 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF919CB200F86DD0007FD24 /* Pair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		BFF919C5200F867F0007FD24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fodeguirassy.FrameworkSample;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		BFF919C6200F867F0007FD24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		BFF919C8200F867F0007FD24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGGMM548B8;
 				INFOPLIST_FILE = FrameworkSampleTests/Info.plist;
@@ -390,6 +399,7 @@
 		BFF919C9200F867F0007FD24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGGMM548B8;
 				INFOPLIST_FILE = FrameworkSampleTests/Info.plist;
