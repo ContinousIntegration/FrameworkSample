@@ -31,6 +31,4 @@ class FrameworkSampleTests: XCTestCase {
         XCTAssertEqual((-1).isPAir, false)
     }
     
-    
-    
 }
