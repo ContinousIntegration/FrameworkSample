@@ -7,3 +7,7 @@ fastlane laneName to run the lane
 
 fastlane actions for hints
 fastlane action actionName for definition
+
+
+  - brew update
+  - bundle install && brew bundle
