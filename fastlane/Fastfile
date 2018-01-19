@@ -1,5 +1,4 @@
 lane :funky do
-<<<<<<< HEAD
   scan()
   if git_branch() == "master"
     funky_deploy
@@ -9,20 +8,6 @@ lane :funky do
 end
 
 lane :funky_deploy do
-  print("\ndeploy\n")
-=======
-  scan(
-    code_coverage: true,
-    open_report: true
-  )
-  if git_branch() == "master"
-    funky_deploy
-  end
-end
-
-
-lane :funky_deploy do
->>>>>>> update
   pod_lib_lint
   pod_push
 end
