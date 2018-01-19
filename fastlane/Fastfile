@@ -3,5 +3,13 @@ lane :funky do
     code_coverage: true,
     open_report: true
   )
-  xcov
+  if git_branch() == "master"
+    funky_deploy
+  end
+end
+
+
+lane :funky_deploy do
+  pod_lib_lint
+  pod_push
 end
