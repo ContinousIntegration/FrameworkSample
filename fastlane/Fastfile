@@ -1,6 +1,6 @@
 lane :funky do
   scan()
-  if git_branch() == "master"
+  if git_branch() == "developp"
     funky_deploy
   #elsif git_branch() == "master"
   #  print "OK MASTER"
